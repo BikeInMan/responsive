@@ -1,7 +1,6 @@
 # Responsive Design Course Projects
 The following projects are a part of the course on repsonsive design by Daniel Scott on Udemy.
-Link to Udemy course:
-https://www.udemy.com/share/101swUB0QTdFtTRQ==/
+Link to [Udemy course:](https://www.udemy.com/share/101swUB0QTdFtTRQ==/)
 
 This course progresses in 4 stages
 1. HTML5 and CSS Basics
