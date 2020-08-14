@@ -1,0 +1,254 @@
+/* To prevent background image from repeating. A css trick */
+html{
+    /* height: 100%; */
+    background-image: linear-gradient( #FC5E55, #FA4083);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.125rem;
+    background-image: url(images/image-lion-background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+main {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card1 {
+    background-image: url(images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.5);
+}
+
+.card2 {
+    background-image: url(images/image-background-card2.jpg);
+    background-size: cover;
+    background-position: bottom;    
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.5);
+}
+
+.card3 {
+    background-image: url(images/image-background-card3.jpg);
+    background-size: cover;
+    background-position: bottom;   
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.5);
+}
+
+.card1, .card2, .card3 {
+    box-sizing: border-box;
+    padding: 30px 30px 20px 30px;
+}
+
+.herobox1 {
+    flex: 2;
+    padding-right: 100px;
+}
+
+.herobox2 {
+    flex: 1;
+}
+
+h1 {
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 2px rgba(15, 15, 15, 0.5);
+}
+
+p {
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+    text-shadow: 2px 2px 2px rgba(15, 15, 15, 0.5);
+}
+
+.cards p {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    /* margin: 10px 30px 20px 30px; */
+    
+}
+
+.cards i {
+    font-size: 100px;
+    /* padding-top: 30px; */
+    
+}
+
+/* .cards a {
+    color: white;
+    text-decoration: none;
+} */
+
+.mybutton {
+    background-color: white;
+    color: #FA4083;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205);
+}
+
+.mybutton:hover {
+    background-color: yellowgreen;
+    transition-duration: 1s;
+}
+
+a.mybutton {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.herobox2 img{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205);
+}
+
+.navbutton {
+    /* background-color: inherit; */
+    color: white;
+    /* border: thin;
+    border-style: solid;
+    border-color: white; */
+    border: 1px solid white; 
+    font-family: 'Playfair Display', serif;
+    padding: 5px 25px;
+    /* To display the menu links in one line */
+    display: inline-block;
+
+    /* Otherwise drop down menu goes weird */
+    position: relative;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.tbox {
+    box-sizing: border-box;
+    padding: 50px;
+    border: 1px solid white;
+    width: 47%;
+    margin-top: 50px;
+}
+
+/* .tbox :last-child{
+    font-size: 0.8rem;
+    color: green;
+} */
+ 
+.tbox p:last-of-type {
+    font-size: 0.75rem;
+    padding-left: 25px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: -30px;
+    font-size: 0.9rem;
+}
+
+.navbutton:hover .dropdown{
+    display: block;
+}
+
+.dropdown .navbutton {
+    width: 120px;
+    background-color: white;
+ }
+
+ .dropdown .navbutton:hover {
+    background-color: aquamarine;
+ }
+
+ .navbutton .dropdown a {
+    color: magenta
+}
+
+/* Contact form */
+form {
+  margin: 40px 0px;
+}
+
+.inputwrapper {
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* input[type='label']{
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+} */
+
+input[type='text'], input[type='email'],textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.85rem;
+}
+
+.margin-right-a {
+    margin-right: 20px;
+}
+
+input[type=radio] {
+    margin-right: 10px;
+}
+
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}

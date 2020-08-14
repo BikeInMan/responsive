@@ -1,0 +1,184 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #EBEBEB;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-container {
+    background-color: #504d4d;
+    min-height: 100px;
+    margin-bottom: 40px;
+
+    /* to fix the header during scrolling. width is also required*/
+    position: fixed;
+    width: 100%;
+   
+}
+
+.header {
+    /* background-color: rgb(221, 208, 198); */
+    min-height: 100px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px
+}
+
+.logo {
+    /* color: white; */
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+.nav{
+    /* display: inline; */
+}
+
+.mybutton {
+    display: inline;
+    border: 1px solid white;
+    padding: 10px 25px;
+    margin-left: 10px;
+}
+
+
+/* Desktop View, Global Styles */
+.container {
+    /* background-color: chocolate; */
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    /* so that it does not go under the header */
+    padding-top: 140px;
+}
+ 
+.col {
+    /* background-color: rgb(245, 220, 244);
+    min-height: 200px; */
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: chocolate;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col p{
+    /* color: white; */
+    font-size: 0.825rem;
+    padding: 20px 25px;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+.footer-container{
+    min-height: 100px;
+    margin-bottom: 40px;
+    background-color: #504d4d;
+}
+
+.footer {
+    min-height: 100px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .col {
+        width: 45%
+    }
+    
+    .hide-desktop-only {
+        display: block;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    /* .header {
+        display: block;
+        text-align: center;
+        padding-bottom: 25px;
+    } */
+
+    .logo{
+        padding: 40px 0px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav a {
+        display: block;
+        margin: 0px;
+    }
+
+    .mybutton{
+        display: block;
+        /* width: 100%; */
+        margin-left: 0px;
+        padding: 10px 0px;
+    }
+
+    .container {
+        padding-top: 0px;
+    }
+
+    .mob-wrapper{
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .navbutton {
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 400px){
+    .col {
+        width: 100%
+    }
+}
+
